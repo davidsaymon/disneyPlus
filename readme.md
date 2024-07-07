@@ -27,4 +27,5 @@ O clone inclui várias seções principais:
 - **Tabs para Shows**: Alternância entre abas de shows utilizando JavaScript.
 - **Acordeão para FAQ**: Abre e fecha respostas de perguntas frequentes ao clicar.
 
+[Veja uma prévia do projeto](https://disney-plus-roan.vercel.app/)
 
