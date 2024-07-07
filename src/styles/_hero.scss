@@ -5,9 +5,18 @@
     min-height: 80vh;
     background-image: url(../images/hero_desktop.jpeg);
     background-size:cover;      /* Ajusta a imagem para cobrir todo o elemento */
-    background-position: center; /* Centraliza a imagem no elemento */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
+   // background-position: center; /* Centraliza a imagem no elemento */
+    //background-repeat: no-repeat; /* Impede a repetição da imagem */
     text-align: center;
+
+        @media (max-width: 768px) {
+            background-image: url(../images/hero_celular.jpeg);
+            padding-top: calc(50vw + 25px);
+            background-size: contain;
+            background-repeat: no-repeat;
+            //margin-top: -320px;
+            margin-top: -55px;
+        }
 
     .button {
         margin-top: 2vw;
@@ -17,9 +26,14 @@
     &__content {
         max-width: 640px;
 
+
         &__branding {
             max-width: 320px;
             margin: 0px auto 38px; 
+
+            @media (max-width: 768px) {
+                max-width: 180px;
+            }
         }
 
         .title--small {
@@ -37,12 +51,22 @@
         &__combos {
             display: flex;
             justify-content: space-between;
+            
+            @media (max-width: 768px) {
+                display: block;
+            }
 
             &__combo {
                 width: calc(50% - 12px);
 
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+
                 img {
                     max-width: 200px;
+
                 }
             }
         }
