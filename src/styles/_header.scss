@@ -5,13 +5,18 @@
     top: 0;
     left: 0;
     background-color: variaveis.$corDeFundo;
+    transition: background-color .5s ease;
+    z-index: 1;
 
     &--is-hidden {
         background-color: transparent;
+        transition: background-color .5s ease;
+        transition: opacity .5s ease;
 
         .header {
-            &__logo, &____links__item:first-child {
+            &__logo, &__links__item:first-child {
                 opacity: 0;
+                visibility: hidden;
             }
         }
     }
@@ -25,12 +30,14 @@
         max-width: 80px;
         width: 100%;
         margin: 5px;
+        transition: opacity .5s ease;
     }
     &__links {
         display: flex;
 
         &__item {
               margin:5px ;
+              transition: opacity .5s ease;
 
         }
     }
